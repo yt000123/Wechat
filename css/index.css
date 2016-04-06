@@ -1,0 +1,106 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+.play {
+	width: 30px; height: 30px;
+	z-index: 5;
+	position: fixed;top: 5%;right: 5%;
+	animation: aa 3s linear infinite;
+	-moz-animation: aa 3s linear infinite;
+	-webkit-animation: aa 3s linear infinite;
+}
+@keyframes aa{
+	from{transform: rotate(0deg);}
+	to{transform: rotate(360deg);}
+}
+@-webkit-keyframes aa{
+	from{-webkit-transform: rotate(0deg);}
+	to{-webkit-transform: rotate(360deg);}
+}
+@-moz-keyframes aa{
+	from{-moz-transform: rotate(0deg);}
+	to{-moz-transform: rotate(360deg);}
+}
+.pause {
+	width: 30px; height: 30px;
+	z-index: 5;
+	position: fixed;top: 5%;right: 5%;
+	animation: bb 3s linear infinite;
+	-moz-animation: bb 3s linear infinite;
+	-webkit-animation: bb 3s linear infinite;
+}
+@keyframes bb{
+	from{transform: rotate(0deg);}
+	to{transform: rotate(0deg);}
+}
+@-webkit-keyframes bb{
+	from{-webkit-transform: rotate(0deg);}
+	to{-webkit-transform: rotate(0deg);}
+}
+@-moz-keyframes bb{
+	from{-moz-transform: rotate(0deg);}
+	to{-moz-transform: rotate(0deg);}
+}
+
+.play img{width: 30px;height: 30px;}
+.pause img{width: 30px;height: 30px;}
+
+.one {background: black url(../img/1.jpg) no-repeat bottom;background-size: 80% auto;display: -webkit-flex;flex-direction: column;text-align: center;position: relative;}
+.one .pic{height: auto;width: 100%;}
+.one .font{position: absolute;top: 17%;width: 100%;height: auto;}
+.one .p1{position: absolute;top: 38%;left: 22%;width: 55%;height: auto;}
+.one .p2{position: absolute;top: 47%;left: 22%;width: 55%;height: auto;}
+
+.two {background: black url(../img/20.jpg) no-repeat top 30%  center ;background-size: 80% auto;-webkit-background-size: 80% auto; position: relative;}
+.two .p3{position: absolute;top: 9%;left: 43%;z-index: 1;height: auto;width: 10%;}
+.two .p4{position: absolute;bottom: 0;width: 100%;}
+
+.three {background: black url(../img/21.jpg) no-repeat bottom center;background-size: 100% auto; position: relative;}
+.three .p5{position: absolute;top: 10%;width: 90%;height: auto;}
+.three .p6{position: absolute;top: 22%;right: 0%;width: 90%;height: auto;}
+
+.four {background: black url(../img/bg7.jpg) no-repeat center;position: relative;background-size: 100% auto;}
+.four .p7{position: absolute;top: 15%;width: 95%;height: auto;}
+
+.five {background: black url(../img/bg1.jpg) no-repeat center;background-size: 100% 100%; position: relative;text-align: left;}
+.five .p8{position: absolute;top: 5%;left: 0;width: 50%;}
+.five .p9{position: absolute;top: 5%;right: 0;width: 50%;}
+.five .p10{position: absolute;bottom: 5%;left: 0;width: 50%;}
+.five .p11{position: absolute;bottom: 5%;right: 0;width: 50%;}
+.five .font2{width: 80%;height: 70%;background-color: #333;position: absolute;top: 10%;left: 4%;opacity: 0.8;border: 2px solid #eee;color: white;font: 14px/1.7em "微软雅黑";padding: 0 20px;}
+
+.six {background:black url(../img/bg9.jpg) no-repeat center;background-size:100% auto ; position: relative;}
+.six .p12{position: absolute;right: 5%;top: 5%;width: 40%;border: 2px solid #ccc;}
+.six .p13{position: absolute;bottom: 3%;width: 100%;border: 2px solid #ccc;border-left: 0px;border-right: 0px;}
+.six .font3{font-size: 0.8rem;width: 90%;position: absolute;top: 27%;left: 5%; line-height: 20px;}
+.six h3{font-size: 1.75rem;position: absolute;left: 12%;top: 17%;}
+
+.seven {background: black url(../img/bg2.jpg) no-repeat center;position: relative; background-size: auto 100%;}
+.seven .font4{font-size: 0.8rem;text-align: left;width: 90%;height: 90%;position: absolute;top: 5%;left: 5%;}
+
+
+.eight {background: #cdc8a8 url(../img/ww1.jpeg) no-repeat bottom;background-size: 100% auto; position: relative;}
+.eight p{font-size: 1rem;line-height: 30px; width: 80%;height: 50%;position: absolute;top: 10%;left: 10%;text-indent: 20px;}
+
+.nine {background: #090915 url(../img/ww2.jpeg) no-repeat bottom;background-size: 100% auto;position: relative;}
+.nine p{font-size: 1rem;line-height: 30px; width: 80%;height: 50%;position: absolute;top: 10%;left: 10%;text-indent: 20px;}
+
+.ten{background: black url(../img/ww3.jpeg) no-repeat bottom;background-size: 100% auto;position: relative}
+.ten p{font-size: 1rem;line-height: 30px; width: 80%;height: 50%;position: absolute;top: 10%;left: 10%;text-indent: 20px;}
+
+.eleven{background: #030303 url(../img/ww4.jpeg) no-repeat bottom;background-size: 100% auto;position: relative}
+.eleven p{font-size: 1rem;line-height: 30px; width: 80%;height: 50%;position: absolute;top: 10%;left: 10%;text-indent: 20px;}
+
+.over{background: #0d0d0d url(../img/ww5.jpg) no-repeat center;background-size: 100% auto;position: relative}
+.over img:nth-of-type(1){width: 25%;height: auto;position: absolute;top: 10%;left: 10%;}
+.over img:nth-of-type(2){width: 12%;height: auto;position: absolute;top: 10%;left: 36%;}
+.over img:nth-of-type(3){width: 25%;height: auto;position: absolute;top: 10%;left: 50%;}
+.over img:nth-of-type(4){width: 50%;height: auto;position: absolute;top: 20%;left: 40%;}
+.over img:nth-of-type(5){width: 15%;height: auto;position: absolute;bottom: 17%;left: 10%;}
+.over img:nth-of-type(6){width: 37%;height: auto;position: absolute;bottom: 17%;left: 30%;}
+.over img:nth-of-type(7){width: 60%;height: auto;position: absolute;bottom: 6%;left: 30%;}
+
+
+
+.swiper-slide {color: #fff;font-size: 36px;display: -webkit-flex;flex-direction: column;text-align: center;}
